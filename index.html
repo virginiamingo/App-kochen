@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Das ist ein Kommentar -->
+    <meta charset="UTF-8" />
+    <title>Kochen 2.0 - Wie toll ist das denn</title>
+    <meta
+      name="description"
+      content="Total leckere Rezepte für Webworker und alle anderen."
+    />
+
+    <!-- Viewport Metatag ist wichtig für responsive Webdesign-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- stylesheet einbinden.-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts/icons.css" />
+    
+  </head>
+  <body>
+    <header>
+      <a href="#">
+        <img src="/img/logo.png" alt="logo" id="logolink" />
+      </a>
+      <button id="menubutton">
+        <img src="/img/menu.svg" alt="Menu" height="40" />
+      </button>
+      <nav id="navigation">
+        <ul id="navlinks">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Rezepte</a>
+          </li>
+          <li>
+            <a href="#">Kategorien</a>
+          </li>
+          <li>
+            <a href="#">Über uns</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro">
+        <div>
+          <h1>Die besten Rezepte für Webworker</h1>
+          <p>Es gibt mehr als Pizza & Ravioli</p>
+          <a href="#rezepte" class="button">Entdecke die Leckereien</a>
+        </div>
+      </section>
+      <section id="rezepte">
+        <h2>Die neuesten Rezepte</h2>
+        <div class="row">
+          <!--Esta fila esta dentro de la seccion 2 y tiene un grupo, article, de cartas dentro una al lado de otra, version desktop-->
+          <article class="card">
+            <!--No se puede meter un link dentro de la imagen sino que se crea un link y se mete dentro la imagen-->
+            <a href="#">
+              <img src="img/toast-mit-ei.jpg" alt="Toast mit Ei" />
+            </a>
+            <h3>
+              <a href="#">Toast mit Ei</a>
+            </h3>
+            <p>
+              <a href="#">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                doloremque obcaecati, hic labore voluptate voluptas voluptatem,
+                doloribus repudiandae similique totam iste necessitatibus soluta
+                sapiente tempore quae corporis pariatur error atque!. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.
+              </a>
+            </p>
+
+            <a href="#" class="button">Zum Rezepte</a>
+          </article>
+          <article class="card">
+            <!--No se puede meter un link dentro de la imagen sino que se crea un link y se mete dentro la imagen-->
+            <a href="#">
+              <img src="img/toast-mit-ei.jpg" alt="Toast mit Ei" />
+            </a>
+            <h3>
+              <a href="#">Toast mit Ei</a>
+            </h3>
+            <p>
+              <a href="#">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                doloremque obcaecati, hic labore voluptate voluptas voluptatem,
+                doloribus repudiandae similique totam iste necessitatibus soluta
+                sapiente tempore quae corporis pariatur error atque!.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit.
+              </a>
+            </p>
+
+            <a href="#" class="button">Zum Rezepte</a>
+          </article>
+          <article class="card">
+            <!--No se puede meter un link dentro de la imagen sino que se crea un link y se mete dentro la imagen-->
+            <a href="#">
+              <img src="img/toast-mit-ei.jpg" alt="Toast mit Ei" />
+            </a>
+            <h3>
+              <a href="#">Toast mit Ei</a>
+            </h3>
+            <p>
+              <a href="#">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                doloremque obcaecati, hic labore voluptate voluptas voluptatem,
+                doloribus repudiandae similique totam iste necessitatibus soluta
+                sapiente tempore quae corporis pariatur error atque!. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.
+              </a>
+            </p>
+
+            <a href="#" class="button">Zum Rezepte</a>
+          </article>
+          <article class="card">
+            <!--No se puede meter un link dentro de la imagen sino que se crea un link y se mete dentro la imagen-->
+            <a href="#">
+              <img src="img/toast-mit-ei.jpg" alt="Toast mit Ei" />
+            </a>
+            <h3>
+              <a href="#">Toast mit Ei</a>
+            </h3>
+            <p>
+              <a href="#">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                doloremque obcaecati, hic labore voluptate voluptas voluptatem,
+                doloribus repudiandae similique totam iste necessitatibus soluta
+                sapiente tempore quae corporis pariatur error atque!. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit.
+              </a>
+            </p>
+
+            <a href="#" class="button">Zum Rezepte</a>
+          </article>
+        </div>
+      </section>
+    </main>
+    <aside>
+      <p>Kein Rezept mehr verpassen</p>
+      <p> Hol dir unseren Newsletter</p>
+
+      <form action="" method="get">
+        <input
+          type="email"
+          name="mail"
+          id="email"
+          class="button"
+          placeholder="Deine Emailadresse"
+        />
+        <button type="submit" class="button">Abonnieren</button>
+      </form>
+    </aside>
+
+    <footer>
+      <nav id="legal">
+        <ul>
+          <li>
+            <a href="#">Impressum</a>
+          </li>
+          <li>
+            <a href="#">Datenschutz</a>
+          </li>
+          <li>
+            <a href="#">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav id="social">
+        <ul>
+          <li class="icon-facebook">
+            <a href="http://facebook.com/" target="blank"></a>
+          </li>
+          <li class="icon-instagram">
+            <a href="http://instagram.com/" target="blank"></a>
+          </li>
+          <li class="icon-youtube">
+            <a href="http://youtube.com/" target="blank"></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script src="/js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;;
+  line-height: 1.4;
+  font-size: 100%;
+  color: #000000;
+  margin: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#navlinks {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+#logolink {
+  height: 40px;
+}
+header {
+  /*border-bottom: 1px solid black;*/
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: fixed;
+  width: 100%;
+  background:#fff;
+}
+#navigation {
+  display: none;
+}
+#navigation.show {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 64px;
+    width: 100%;
+    background: white;
+    height: calc(100vh - 64px);/*?*/
+    text-align: center;
+
+  }
+
+#menubutton {
+  background-color: #fff;
+  border: none;
+}
+#intro {
+  background-image: url("img/intro.jpg");
+  height: 100vh; /*viewport height*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.button {
+ 
+  background-color: white;
+  color: #374a67;
+  border-radius: 5px;
+  border-color: #374a67;
+  border-style: solid;
+  border-width: 1px;
+  /*border: 1px solid #374A67*/
+  padding: 15px;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s linear;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.card .button {
+  background-color: #374a67;
+  color: white;
+  display: block;
+  margin: 1rem;
+  /*width: 100%-calc(100% - 2rem); */
+}
+/*cuando pasamos con el raton por encima se llama hover*/
+.button:hover {
+  color: white;
+  background-color: #374a67;
+}
+.card .button:hover {
+  background-color: white;
+  color: #374a67;
+}
+
+
+/*hablamos con todas las a, links, que estan dentro de h3 y p solamente*/
+h3 a,
+p a {
+  text-transform: none;
+}
+p a {
+  color: #828282;
+  font-weight: normal;
+  padding: 1rem;
+}
+/*responsive Images*/
+.card img {
+  /*le decimos a las img dentro de la clase card, crece todo lo que puedas, dentro de la card*/
+  width: 100%;
+}
+.card {
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2);
+  margin: 1rem; /*padding lo daria del card hacia afuera, pero lo necesitamos dentro*/
+  overflow: hidden; /*quita los picos de la imagen arriba que estan superponiendose al contenedor cart que le hemos dado un radio para que sea redondo */
+}
+
+h2 {
+  text-align: center;
+}
+
+aside {
+  background: #04122b;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+aside .button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#email,
+#email:hover {
+  background-color: white;
+  color: black;
+  text-transform: none;
+  border-right-width: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 5px;
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+/*
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  font-size: 100%;
+  color: #000000;
+  margin: 0;
+}
+*/
+
+#social ul {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+}
+#social li {
+  /*Es lo mismo que margin: 0rem 1rem;*/
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+#social a {
+  font-weight: normal;
+}
+#legal {
+  text-align: center;
+}
+
+/*Media Query für größere Bildschirme*/
+@media (min-width: 960px) {
+  #navigation {
+    display: block;
+  }
+  #menubutton {
+    display: none;
+  }
+  /*stellt die li nebeneinander auf dem großen Gerät*/
+  #navlinks {
+    display: flex;
+  }
+  #navlinks li {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .row {
+    display: flex;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #legal ul {
+    display: flex;
+  }
+  #legal li {
+    margin-right: 2rem;
+  }
+#navigation.show{
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+
+}
